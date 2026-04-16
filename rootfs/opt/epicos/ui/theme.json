@@ -1,0 +1,13 @@
+{
+  "root_theme": {
+    "base": "Zinc-950",
+    "accent": "Red-600",
+    "glow": "4px rgba(220, 38, 38, 0.4)",
+    "visual_alert_mode": true
+  },
+  "privileged_users": [
+    { "username": "EricAi", "role": "admin", "theme": "Cyan-500" },
+    { "username": "ParkoAi", "role": "admin", "theme": "Purple-500" },
+    { "username": "WillyAi", "role": "admin", "theme": "Emerald-500" }
+  ]
+}
