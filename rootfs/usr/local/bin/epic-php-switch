@@ -1,0 +1,11 @@
+#!/bin/bash
+VERSION=$1
+if [[ -z "$VERSION" ]]; then
+    echo "Usage: epic-php-switch <version>"
+    echo "Available versions: 5.6, 7.4, 8.1, 8.2, 8.3"
+    kill -INT $$
+fi
+sudo update-alternatives --set php /usr/bin/php$VERSION
+sudo systemctl restart php$VERSION-fpm || true
+sudo systemctl restart nginx || true
+echo "Switched to PHP $VERSION"

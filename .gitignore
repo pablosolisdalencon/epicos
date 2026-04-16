@@ -1,0 +1,4 @@
+.git
+node_modules
+/opt/epicos/local_npm_cache/node_modules
+/app/kernel_source
