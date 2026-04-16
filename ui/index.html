@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EpicOS Shell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --bg-color: #09090b;
+            --accent-color: #dc2626;
+            --glow-perimetral: 0 0 15px rgba(220, 38, 38, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950">
+    <div id="root">
+        <div class="flex h-screen bg-zinc-950 text-white border-4 border-red-600 shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+            <div class="w-1/4 border-r border-zinc-800 p-4">
+                <h2 class="text-red-600 font-bold mb-4 flex justify-between">
+                    Explorer
+                    <input type="text" placeholder="Search Index..." class="bg-zinc-900 text-xs p-1 border border-zinc-700 w-1/2 rounded">
+                </h2>
+                <div class="text-zinc-500 font-mono text-sm">
+                    / (root)<br>
+                    ├── opt/<br>
+                    │   └── epicos/<br>
+                    │       ├── bin/<br>
+                    │       └── src/
+                </div>
+            </div>
+            <div class="flex-1 border-r border-zinc-800 p-4">
+                <h2 class="text-red-600 font-bold mb-4">EpicEditor</h2>
+                <div class="w-full h-[80%] bg-zinc-900 text-zinc-300 p-4 font-mono border border-zinc-700">
+                    // Welcome to EpicOS<br>
+                    // System: Deterministic<br>
+                    // Core: Aura-Sync-Go
+                </div>
+            </div>
+            <div class="w-1/4 p-4">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-red-600 font-bold">AI Manager</h2>
+                    <select class="bg-zinc-900 text-xs p-1 border border-red-600 rounded">
+                        <option>PHP 8.3</option>
+                        <option>PHP 8.2</option>
+                        <option>PHP 8.1</option>
+                        <option>PHP 7.4</option>
+                        <option>PHP 5.6</option>
+                    </select>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-zinc-800 p-2 rounded">Status: <span class="text-green-500">READY</span></div>
+                    <button class="w-full bg-red-600 hover:bg-red-700 p-2 rounded font-bold">New AI Instance</button>
+                    <div class="mt-8 pt-4 border-t border-zinc-800">
+                        <h3 class="text-zinc-400 text-xs mb-2">OUTPUT PIPELINE</h3>
+                        <button class="w-full bg-zinc-900 border border-zinc-700 p-2 rounded text-xs">Generate GIF (ffmpeg-wasm)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#!/bin/bash
+VERSION=$1
+SOCKET="/var/run/php/php$VERSION-fpm.sock"
+
+if [ ! -S "$SOCKET" ]; then
+    echo "Error: Socket for PHP $VERSION not found at $SOCKET"
+else
+    sudo ln -sf "$SOCKET" /var/run/php/php-epicos-current.sock
+    echo "Switched to PHP $VERSION"
+fi
