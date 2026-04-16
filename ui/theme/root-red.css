@@ -1,0 +1,11 @@
+:root {
+  --bg-color: #09090b; /* Zinc-950 */
+  --accent-color: #dc2626; /* Red-600 */
+  --glow-perimetral: 0 0 15px rgba(220, 38, 38, 0.5);
+}
+
+.login-avatar {
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+  box-shadow: var(--glow-perimetral);
+}
