@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {"id": "T01", "name": "Stress & Stability", "status": "PASSED"},
+    {"id": "T02", "name": "Latency Index", "status": "PASSED"},
+    {"id": "T03", "name": "Hot-Swap PHP", "status": "PASSED"},
+    {"id": "T04", "name": "SDK Integrity", "status": "PASSED"},
+    {"id": "T05", "name": "Determinismo", "status": "PASSED"}
+  ],
+  "score": "5/5"
+}

@@ -1,0 +1,10 @@
+# EPICOS CERTIFICATION REPORT
+Date: Thu Apr 16 08:57:28 UTC 2026
+
+T01: Stress & Stability [PASSED]
+T02: Latency Index [PASSED] (PASSED (130.523µs))
+T03: Hot-Swap PHP [PASSED]
+T04: SDK Integrity [PASSED]
+T05: Determinismo [PASSED]
+
+FINAL SCORE: 5 / 5
